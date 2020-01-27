@@ -8,7 +8,7 @@ for (let i = 0; i < tmp.length; i++) {
 }
 
 Array.from(document.getElementsByClassName("activity feed-entry card")).forEach(
-  function(card, index, array) {
+  function(card, index) {
     // do stuff
     var replacement = sorted_activity_feeds[index];
     console.log("index: " + index + ": " + replacement.getElementsByClassName("title-text")[0].innerText + ", " + replacement.getElementsByClassName("timestamp")[0].getAttributeNode("datetime").value);
