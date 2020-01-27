@@ -1,0 +1,19 @@
+{
+  "name": "Strava Sanity",
+  "version": "1.0",
+  "description": "Strava feeds that don't drive you nuts",
+  "permissions": ["declarativeContent", "activeTab"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.strava.com/*"],
+      "js": ["feeds.js"]
+    }
+  ],
+  "icons": {
+    "128": "images/S128.png" },
+  "manifest_version": 2
+}
