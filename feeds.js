@@ -14,9 +14,6 @@ try {
     function(card, index) {
       if (card.className.includes("activity")) {
         var replacement = sorted_activity_feeds[index];
-        console.log("index: " + index + ": " + replacement.getElementsByClassName("title-text")[0].innerText + ", " + replacement.getElementsByClassName("timestamp")[0].getAttributeNode("datetime").value);
-        console.log(card.getElementsByClassName("title-text")[0].innerText + ", " + card.getElementsByClassName("timestamp")[0].getAttributeNode("datetime").value);
-
         card.replaceWith(replacement);
       }
     }
