@@ -14,10 +14,10 @@
     }
   ],
   "icons": {
-    "16": "images/S16.png",
-    "32": "images/S32.png",
-    "48": "images/S48.png",
-    "128": "images/S128.png"
+    "16": "images/S16r.png",
+    "32": "images/S32r.png",
+    "48": "images/S48r.png",
+    "128": "images/S128r.png"
   },
   "manifest_version": 2
 }
